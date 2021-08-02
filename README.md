@@ -17,7 +17,7 @@ For ease of use we have installed:
 
 #### API URL - https://jsonplaceholder.typicode.com
 
-API URL is located in the `variables.ts` file and is already imported into the `todos.service.ts` file for you to consume. The API accepts any of the following request types in the list.
+API URL is listed as a constant `SERVER_URL` and a proxy created to prevent any CORS issues. The API accepts any of the following request types in the list.
 
 Also please keep in mind this is a free playground server that allows us to write code against it. POST will not actually be stored however you should be able to go through the motions of completing your post and representing that data in your component. We understand on refresh the POST item will be gone.
 
@@ -29,6 +29,13 @@ Also please keep in mind this is a free playground server that allows us to writ
 - DELETE /todos/`{:id}`
 
 ## Directions
+
+For UX condisderations:
+
+- Build an interface to display the data and a company logo (from https://logoipsum.com/)
+  - Moible experience should be full page width
+  - Desktop experience should be 3/4 page width
+- Overwrite some of the styles that come from Bootstrap and/or the Angular Material theme. This can be anything you want to change.
 
 Modify the todo service however you like to accomplish the following: Use RXJS Observable patterns.
 

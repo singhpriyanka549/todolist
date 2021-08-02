@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 
 
-export const SERVER_URL: string = 'https://jsonplaceholder.typicode.com';
+export const SERVER_URL: string = "/api";
 
 @Injectable({
   providedIn: 'root'
