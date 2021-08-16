@@ -32,7 +32,9 @@ Also please keep in mind this is a free playground server that allows us to writ
 
 For UX condisderations:
 
-Please use the following Adobe XD link as your mock to build your interface.  As a call out the mobile view todos when clicked on in the mock show the delete and edit CTAs. [MOCK](https://xd.adobe.com/view/6b3b13dc-60b2-4e1b-95bc-8705ed6a2b2c-3e68/)
+Please use the following Adobe XD link as your mock to build your interface.  As a call out the mobile view todos when clicked on in the mock show the delete and edit CTAs. 
+
+[Adobe XD Mock Link](https://xd.adobe.com/view/6b3b13dc-60b2-4e1b-95bc-8705ed6a2b2c-3e68/)
 
 - Build an interface to display the data and a company logo (from https://logoipsum.com/)
   - Moible experience should be full page width
