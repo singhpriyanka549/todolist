@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>To Do List</h2>
+            <div class="todo-wrapper">
+                <div class="single-todo" *ngIf="showAdd">
+                    <input type="checkbox" name="todocheck" />
+                    <input type="text" placeholder="Start typing ..." class="form-control todo-add-input" #box
+                        (keyup.enter)="submitVal(box.value)" />
+                    <div class="edit-delete-button-add">
+                        <img class="delete-icon"
+                            src="https://www.clipartmax.com/png/middle/84-842915_delete-icon-png-red.png" />
+                    </div>
+                </div>
+                <div *ngFor="let item of todoItem; let i=index;">
+                    <div class="single-todo" (click)="showEditDelteBtn(i)"
+                        [ngClass]="item.completed ? 'todo-complete': '' ">
+                        <input type="checkbox" class="todoCheck" (change)="updateTodoList(i)" [checked]="item.completed"
+                            [ngClass]="item.completed ? 'strike-through': ''" name="todocheck" />
+                        <span [ngClass]="item.completed ? 'strike-through': '' ">{{item.title}}</span>
+                        <div class="edit-delete-button" [ngClass]="showbtnIndex == i ? 'showEditClass': '' ">
+                            <img class="edit-icon"
+                                src="https://cpng.pikpng.com/pngl/s/77-776415_pencil-icon-to-indicate-how-roofscreen-will-provide.png"
+                                (click)="editTodoItem(i)" />
+                            <img class="delete-icon"
+                                src="https://www.clipartmax.com/png/middle/84-842915_delete-icon-png-red.png"
+                                (click)="deleteTodoItem(i)" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-danger add-btn-round" (click)="showAddDiv()">+</button>
+    </div>
+
+
+
+</div>

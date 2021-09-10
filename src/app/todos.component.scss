@@ -1,0 +1,56 @@
+.single-todo{
+    padding: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid #9b9b9b;
+    display: flex;
+}
+.single-todo span{
+    padding-left: 15px;
+}
+.single-todo .todoCheck{
+    width: 25px;
+    height: 25px;
+}
+.todo-complete{
+    background-color: #fafafa;
+}
+.strike-through{
+    text-decoration: line-through;
+    cursor:not-allowed;
+}
+.edit-delete-button{
+    margin-left: auto;
+    order: 2;
+    display: none;
+}
+.edit-delete-button-add{
+    margin-left: auto;
+    order: 2;
+}
+.todo-add-input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-left: 20px;
+    border-radius: 0px;
+}
+.todo-add-input:focus{
+    box-shadow: none !important;
+}
+.delete-icon{
+    width: 43px;
+    margin-left: 10px;
+}
+.edit-icon{
+    width:30px
+}
+.showEditClass{
+    display: block;
+}
+.add-btn-round{
+    position: fixed;
+    bottom: 10%;
+    font-size: 26px;
+    right: 5%;
+    border-radius: 50%;
+    width: 55px;
+}
